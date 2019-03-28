@@ -3,31 +3,36 @@ layout: true
 class: center, middle, inverse
 
 ---
-# Kubernetes入門
-
----
-# コマンド編
+## Kubernetes コマンド入門
 
 ---
 layout: false
+## whoami
+
+.left-small[
+    ![image](https://pbs.twimg.com/profile_images/994762110792953856/EheEvqBY_400x400.jpg)
+]
+
+.right-large[
+- Kyohei Mizumoto(@kyohmizu)
+
+- C# Software Engineer
+
+- Interests
+    - Docker/Kubernetes
+    - Go
+    - Security
+]
+
+---
 ### 対象者
 
 - Kubernetes未経験者
 
 ---
-### 参考書籍
-
-<center><img src="https://images-na.ssl-images-amazon.com/images/I/71F%2BqeYXNgL.jpg" width=45%></center>
-
----
-### 参考サイト
-
-公式  
-<https://kubernetes.io/docs/reference/kubectl/>
-
----
 class: center, middle, inverse
 # kubectl
+
 ---
 ### kubectl？
 
@@ -48,21 +53,35 @@ kubectl [command] [TYPE] [NAME] [flags]
 ### kubectlコマンド
 
 - apply
+
 - config
+
 - create
+
 - delete
+
 - describe
-- exec
-- get
 
 ---
 ### kubectlコマンド
 
+- exec
+
+- get
+
 - logs
+
 - patch
+
 - replace
+
+---
+### kubectlコマンド
+
 - scale
+
 - top
+
 - version
 
 etc...
@@ -109,11 +128,13 @@ $ kubectl patch [リソースの種類]/[リソース名] \
 
 例
 
+.zoom1[
 ```console
 $ kubectl patch pod sample-pod -p \
 '{"spec":{"containers":[{"name":"sample","image":"new image"}]}}'
 
 ```
+]
 
 ---
 ### リソース定義を適用
@@ -232,3 +253,18 @@ $ kubectl config [サブコマンド]
 ---
 class: center, middle, inverse
 # デモ
+
+---
+### 参考書籍
+
+<center><img src="https://images-na.ssl-images-amazon.com/images/I/71F%2BqeYXNgL.jpg" width=45%></center>
+
+---
+### 参考サイト
+
+公式  
+<u><https://kubernetes.io/docs/reference/kubectl/></u>
+
+---
+class: center, middle, blue
+# Thank you!
